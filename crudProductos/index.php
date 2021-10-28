@@ -31,7 +31,7 @@ if(empty($_POST['producto']) || empty($_POST['descripcion']) || empty($_POST['pr
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../crudProductos/estilos/estiloIngresar.css">
+    <link rel="stylesheet" href="estilos/estiloIngresar.css">
     <title>Ingresar productos</title>
 </head>
 <body>
