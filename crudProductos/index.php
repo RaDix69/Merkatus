@@ -36,6 +36,8 @@ if(empty($_POST['producto']) || empty($_POST['descripcion']) || empty($_POST['pr
 </head>
 <body>
     <!-- <center> -->
+        <section>
+        <div class="formulario">
         <h1>Datos Producto 
             <br>ADMIN</h1>
         <form action="" method="POST" enctype="multipart/form-data">
@@ -59,10 +61,12 @@ if(empty($_POST['producto']) || empty($_POST['descripcion']) || empty($_POST['pr
         <center>
             <input class="boton" type="submit" name="guardar" value="Guardar">
         </center>
-        </form>
-        
-        <img class="gif" src="https://i.kym-cdn.com/photos/images/original/001/866/170/a79.gif" alt="">
         <button class="boton"><a href="../crudProductos/consulta.php">Consultar Productos</a></button>
+
+        </form>
+        </div>
+        </section>
+        <img class="gif" src="https://i.kym-cdn.com/photos/images/original/001/866/170/a79.gif" alt="">
     <!-- </center> -->
 </body>
 </html>
