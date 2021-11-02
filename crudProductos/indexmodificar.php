@@ -39,24 +39,24 @@ return[
     <div class="linea">
     <h1>Actualizar datos del Producto</h1>
     <label for="">Id_producto: </label>    
-    <input class="entrada" type="text" name="id_producto" id="id_producto" class="form-control" value="<?php echo $consulta[0]?>" style="display:none;">
-    <input class="entrada" type="text" name="id_producto2" id="id_producto2" class="form-control" value="<?php echo $consulta[0]?>" disabled>
+    <input required="" class="entrada" type="text" name="id_producto" id="id_producto" class="form-control" value="<?php echo $consulta[0]?>" style="display:none;">
+    <input required="" class="entrada" type="text" name="id_producto2" id="id_producto2" class="form-control" value="<?php echo $consulta[0]?>" disabled>
     <br><br>
     <label for="">Proveedor: </label>    
-    <input class="entrada" type="text" name="proveedor" id="proveedor" class="form-control" value="<?php echo $consulta[1]?>">
+    <input required="" class="entrada" type="text" name="proveedor" id="proveedor" class="form-control" pattern="[A-Za-z ]{1,100}" value="<?php echo $consulta[1]?>">
     <br><br>
     <label for="">Nombre producto: </label>    
-    <input class="entrada" type="text" name="nombrep" id="nombrep" class="form-control" value="<?php echo $consulta[2]?>">
+    <input required="" class="entrada" type="text" name="nombrep" id="nombrep" class="form-control" pattern="[A-Za-z ]{1,100}" value="<?php echo $consulta[2]?>">
     <br><br>
     <label for="">Id_categoria: </label>    
-    <input class="entrada" type="text" name="id_categoria" id="id_categoria" class="form-control" value="<?php echo $consulta[3]?>" style="display:none;">
-    <input class="entrada" type="text" name="id_categoria2" id="id_categoria2" class="form-control" value="<?php echo $consulta[3]?>" disabled >
+    <input required="" class="entrada" type="number" name="id_categoria" id="id_categoria" class="form-control" value="<?php echo $consulta[3]?>" style="display:none;">
+    <input required="" class="entrada" type="number" name="id_categoria2" id="id_categoria2" class="form-control" value="<?php echo $consulta[3]?>" disabled >
     <br><br>
     <label for="">Descripcion: </label>    
-    <textarea class="entrada" name="descripcion" id="descripcion" class="form-control" value=""><?php echo $consulta[4]?></textarea>   
+    <textarea required="" class="entrada" name="descripcion" id="descripcion" class="form-control" value=""><?php echo $consulta[4]?></textarea>   
     <br><br>
     <label for="">Precio: </label>    
-    <input class="entrada" type="text" name="precio" id="precio" class="form-control" value="<?php echo $consulta[5]?>">
+    <input required="" class="entrada" type="number" name="precio" id="precio" class="form-control" value="<?php echo $consulta[5]?>">
     <br><br>
 
     <input type="submit" name="boton" value="Actualizar Producto" class="btn btn-primary" >
