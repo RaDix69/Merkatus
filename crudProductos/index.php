@@ -38,35 +38,35 @@ if(empty($_POST['producto']) || empty($_POST['descripcion']) || empty($_POST['pr
     <!-- <center> -->
         <section>
         <div class="formulario">
-        <h1>Datos Producto 
+        <h1 class="titulo">Datos Producto 
             <br>ADMIN</h1>
-        <form action="" method="POST" enctype="multipart/form-data">
-        <h1>Ingrese los datos del producto</h1>
-        <label for="">Nombre del producto: </label>
+        <form action="" method="POST" enctype="multipart/form-data" class="formulario">
+        <h2>Ingrese los datos del producto</h2>
+        <label for="" class="campos">Nombre del producto: </label>
         <input class="entrada" type="text" name="producto"> <br><br>
-        <label for="">Nombre del proveedor: </label>
+        <label for="" class="campos">Nombre del proveedor: </label>
         <input class="entrada" type="text" name="proveedor"> <br><br>
-        <label for="">Categoria: </label>
-        <select class="entrada" name="categoria">
+        <label for="" class="campos">Categoria: </label>
+        <select class="entrada" name="categoria" >
                   <option value="value1" selected >......</option>
                   <option value="1200" >Lacteos</option>
                   <option value="1201">Carnicos</option>
                                     </select><br> <br>
-        <label for="">Descripción: </label>
+        <label for="" class="campos">Descripción: </label>
         <input  class="entrada" type="text" name="descripcion"><br><br>
-        <label for="">Precio: </label>
+        <label for="" class="campos">Precio: </label>
         <input  class="entrada" type="text" name="precio"><br><br>
-        <label for="">Imágen: </label>
+        <label for="" class="campos">Imágen: </label>
         <input class="entrada" type="file" name="imagen" required=""><br><br>
         <center>
-            <input class="boton" type="submit" name="guardar" value="Guardar">
-        </center>
+        <input class="boton" type="submit" name="guardar" value="Guardar">
+        
         <button class="boton"><a href="../crudProductos/consulta.php">Consultar Productos</a></button>
-
+        </center>
         </form>
         </div>
         </section>
-        <img class="gif" src="https://i.kym-cdn.com/photos/images/original/001/866/170/a79.gif" alt="">
+        <img class="gif" src="https://i.kym-cdn.com/photos/images/original/001/866/170/a79.gif" alt="" class="monito">
     <!-- </center> -->
 </body>
 </html>
