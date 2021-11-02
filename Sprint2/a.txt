@@ -1,0 +1,13 @@
+https://prod.liveshare.vsengsaas.visualstudio.com/join?737A54350CF6395E81C54A0C804526032064
+PALETA DE COLORES MERKATUS
+Naranja palido: #F2762E
+Naranja fuerte: #F25116
+Rojo sangre: #A60303
+Rojo vino: #730202
+Rojo vinotinto: #400101
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
+
+font-family: 'Signika Negative', sans-serif;
