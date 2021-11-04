@@ -1,4 +1,4 @@
-https://prod.liveshare.vsengsaas.visualstudio.com/join?098FDC830E86B1A9DA260C56019017BF9C33
+https://prod.liveshare.vsengsaas.visualstudio.com/join?F65A5B4F511784267D72B871C6458D80FFEA
 PALETA DE COLORES MERKATUS
 Naranja palido: #F2762E
 Naranja fuerte: #F25116
