@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     display: flex;
-    background-image: url(../img/fondo.png);
+    background-image: url(../img/fondo2.jpg);
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
@@ -15,16 +15,15 @@ body{
  --Rojovino: #730202;
  --Rojovinotinto: #400101;
 }
-body{
-    overflow-y: hidden;
-    scroll-behavior: smooth;
 
-}
 /* -------------form ------------ */
 
 section{
-    background: var(--Rojovinotinto);
-    padding: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: rgba(115, 2, 2, 0.5);
+    border: 6px solid var(--Rojovinotinto);
+    padding: 100px;
     min-height: 80vh;
     max-height: 100vh;
 
@@ -41,21 +40,18 @@ section .titulo{
     font-size: 20px;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(1,1fr);
     grid-gap:20px;
     margin-top: px;
 }
 .formulario input,textarea{
     font-size: 20px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap:20px;
+    width: 150%;
 
 }
 .formulario .campos input,textarea,select{
-    width: 95%;
-    padding: 15px;
+    width: 85%;
+    padding: 10px;
     border: none;
     outline: none;
     font-size: 18px;
@@ -64,6 +60,7 @@ section .titulo{
 .formulario textarea{
     resize:none;
     height:100px;
+    width: 150%;
 }
 .formulario input[type="submit"] , button{
     background: var(--Naranjapalido);
@@ -86,12 +83,51 @@ section .titulo{
     background: var(--Naranjapalido);
 }
 .monito{
-    position:absolute;
-    top: 20px;
-    width: 10%;
-    padding: 10px;
+    position:relative;
+
+    width: 20%;
+
+}
+/* -------------tooltip ------------ */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    /* border-bottom: 1px dotted black; */
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+  
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
 
 @media(max-width: 992px){
-    
+
 }

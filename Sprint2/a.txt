@@ -2,9 +2,9 @@ https://prod.liveshare.vsengsaas.visualstudio.com/join?C0CC8549F3C8559C5C503DCE6
 
 PALETA DE COLORES MERKATUS
 Naranja palido: #F2762E
-Naranja fuerte: #F25116
+Naranja fuerte: #F25116 RGB(242, 81, 22)
 Rojo sangre: #A60303
-Rojo vino: #730202
+Rojo vino: #730202  rgba(115 2, 2)
 Rojo vinotinto: #400101
 
 <link rel="preconnect" href="https://fonts.googleapis.com">

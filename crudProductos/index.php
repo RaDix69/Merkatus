@@ -41,15 +41,22 @@ if(empty($_POST['producto']) || empty($_POST['descripcion']) || empty($_POST['pr
     <!-- <center> -->
         <div class="contenedor">
         <section>
+
         <div class="formulario">
-        <h1 class="titulo">Datos Producto 
-            <br>ADMIN</h1>
+        <h1 class="titulo"> Datos Producto </h1>
+
         <form action="" method="POST" enctype="multipart/form-data" class="formulario">
         <h2>Ingrese los datos del producto</h2>
         <label for="" class="campos">Nombre del producto: </label>
-        <input class="entrada" type="text" name="producto" pattern="[A-Za-z ]{1,100}" title="Coloca solo letras, la primera en mayúscula" required=""> <br><br>
+        <div class="tooltip">
+            <input class="entrada" type="text" name="producto" pattern="^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$+0-9" title="Coloca solo letras, la primera en mayúscula" required="">
+             <br><br><span class="tooltiptext">Coloca solo letras, nada de números o caracteres especiales</span>
+        </div>
         <label for="" class="campos">Nombre del proveedor: </label>
-        <input class="entrada" type="text" name="proveedor" pattern="[A-Za-z ]{1,100}" title="Coloca solo letras, la primera en mayúscula" required=""> <br><br>
+        <div class="tooltip">
+            <input class="entrada" type="text" name="proveedor" pattern="^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$+0-9" title="Coloca solo letras, la primera en mayúscula" required="">
+            <span class="tooltiptext">Coloca el nombre del proveedor</span> <br><br>
+        </div>
         <label for="" class="campos">Categoria: </label>
         <select class="entrada" name="categoria" required="">
                   <option value="value1" selected disabled>......</option>
@@ -57,11 +64,20 @@ if(empty($_POST['producto']) || empty($_POST['descripcion']) || empty($_POST['pr
                   <option value="1201">Carnicos</option>
                                     </select><br> <br>
         <label for="" class="campos">Descripción: </label>
-        <textarea class="entrada" type="text" name="descripcion" required="" minlength="10" maxlength="200"></textarea><br><br>
+        <div class="tooltip">
+            <textarea class="entrada" type="text" name="descripcion" pattern="^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$+0-9" required="" minlength="10" maxlength="200"></textarea><br><br>
+            <span class="tooltiptext">Pon una breve descripción menor a 200 caracteres</span>
+        </div>
         <label for="" class="campos">Precio: </label>
-        <input  class="entrada" type="number" name="precio" required=""><br><br>
+        <div class="tooltip">
+            <input  class="entrada" type="number" name="precio" required=""><br><br>
+            <span class="tooltiptext">Coloca el precio del producto</span>
+        </div>
         <label for="" class="campos">Imágen: </label>
-        <input class="entrada" type="file" name="imagen" required=""><br><br>
+        <div class="tooltip">
+            <input class="entrada" type="file" name="imagen" required=""><br><br>
+            <span class="tooltiptext">Sube la imágen del producto acá</span>
+        </div>
         <center>
         <input class="boton" type="submit" name="guardar" value="Guardar">
         <br>
@@ -72,7 +88,6 @@ if(empty($_POST['producto']) || empty($_POST['descripcion']) || empty($_POST['pr
         </div>
         </div>
     </section>
-    <img class="monito" src="https://i.kym-cdn.com/photos/images/original/001/866/170/a79.gif" alt="" >
 
     <!-- </center> -->
 </body>

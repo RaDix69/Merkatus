@@ -43,17 +43,17 @@ return[
     <input required="" class="entrada" type="text" name="id_producto2" id="id_producto2" class="form-control" value="<?php echo $consulta[0]?>" disabled>
     <br><br>
     <label for="">Proveedor: </label>    
-    <input required="" class="entrada" type="text" name="proveedor" id="proveedor" class="form-control" pattern="[A-Za-z ]{1,100}" value="<?php echo $consulta[1]?>">
+    <input required="" class="entrada" type="text" name="proveedor" id="proveedor" class="form-control" pattern="^[a-zA-Z0-9À-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$+0-9" value="<?php echo $consulta[1]?>">
     <br><br>
     <label for="">Nombre producto: </label>    
-    <input required="" class="entrada" type="text" name="nombrep" id="nombrep" class="form-control" pattern="[A-Za-z ]{1,100}" value="<?php echo $consulta[2]?>">
+    <input required="" class="entrada" type="text" name="nombrep" id="nombrep" class="form-control" pattern="^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$+0-9" value="<?php echo $consulta[2]?>">
     <br><br>
     <label for="">Id_categoria: </label>    
     <input required="" class="entrada" type="number" name="id_categoria" id="id_categoria" class="form-control" value="<?php echo $consulta[3]?>" style="display:none;">
     <input required="" class="entrada" type="number" name="id_categoria2" id="id_categoria2" class="form-control" value="<?php echo $consulta[3]?>" disabled >
     <br><br>
     <label for="">Descripcion: </label>    
-    <textarea required="" class="entrada" name="descripcion" id="descripcion" class="form-control" value="" minlength="10" maxlength="200"><?php echo $consulta[4]?></textarea>   
+    <textarea required="" class="entrada" name="descripcion" id="descripcion" class="form-control" value="" pattern="^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$+0-9" minlength="10" maxlength="200"><?php echo $consulta[4]?></textarea>   
     <br><br>
     <label for="">Precio: </label>    
     <input required="" class="entrada" type="number" name="precio" id="precio" class="form-control" value="<?php echo $consulta[5]?>">
