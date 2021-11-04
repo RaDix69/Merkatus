@@ -53,7 +53,7 @@ return[
     <input required="" class="entrada" type="number" name="id_categoria2" id="id_categoria2" class="form-control" value="<?php echo $consulta[3]?>" disabled >
     <br><br>
     <label for="">Descripcion: </label>    
-    <textarea required="" class="entrada" name="descripcion" id="descripcion" class="form-control" value=""><?php echo $consulta[4]?></textarea>   
+    <textarea required="" class="entrada" name="descripcion" id="descripcion" class="form-control" value="" minlength="10" maxlength="200"><?php echo $consulta[4]?></textarea>   
     <br><br>
     <label for="">Precio: </label>    
     <input required="" class="entrada" type="number" name="precio" id="precio" class="form-control" value="<?php echo $consulta[5]?>">

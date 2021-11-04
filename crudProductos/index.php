@@ -39,6 +39,7 @@ if(empty($_POST['producto']) || empty($_POST['descripcion']) || empty($_POST['pr
 </head>
 <body>
     <!-- <center> -->
+        <div class="contenedor">
         <section>
         <div class="formulario">
         <h1 class="titulo">Datos Producto 
@@ -56,7 +57,7 @@ if(empty($_POST['producto']) || empty($_POST['descripcion']) || empty($_POST['pr
                   <option value="1201">Carnicos</option>
                                     </select><br> <br>
         <label for="" class="campos">Descripción: </label>
-        <textarea class="entrada" type="text" name="descripcion" required=""></textarea><br><br>
+        <textarea class="entrada" type="text" name="descripcion" required="" minlength="10" maxlength="200"></textarea><br><br>
         <label for="" class="campos">Precio: </label>
         <input  class="entrada" type="number" name="precio" required=""><br><br>
         <label for="" class="campos">Imágen: </label>
@@ -69,7 +70,7 @@ if(empty($_POST['producto']) || empty($_POST['descripcion']) || empty($_POST['pr
         </center>
         </form>
         </div>
-    
+        </div>
     </section>
     <img class="monito" src="https://i.kym-cdn.com/photos/images/original/001/866/170/a79.gif" alt="" >
 
