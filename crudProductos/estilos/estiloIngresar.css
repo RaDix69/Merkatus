@@ -3,6 +3,8 @@ body{
     padding: 0;
     display: flex;
     background-image: url(../img/fondo2.jpg);
+    
+    background-size: 100%;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
@@ -19,13 +21,12 @@ body{
 /* -------------form ------------ */
 
 section{
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 20px;
     background: rgba(115, 2, 2, 0.5);
     border: 6px solid var(--Rojovinotinto);
-    padding: 100px;
-    min-height: 80vh;
-    max-height: 100vh;
+    padding: 50px;
+
 
 }
 section .titulo{
@@ -83,7 +84,9 @@ section .titulo{
     background: var(--Naranjapalido);
 }
 .monito{
-    position:relative;
+    position:absolute;
+    top: 60%;
+    left: 10%;
 
     width: 20%;
 
@@ -129,5 +132,20 @@ section .titulo{
 }
 
 @media(max-width: 992px){
+    section{       
+        padding: 50px;
+    }
+    .formulario input, textarea {
 
+        width: 100%;
+    }
+    
+.formulario textarea {
+    resize: none;
+    height: 100px;
+    width: 100%;
+}
+.monito{
+    display: none;
+}
 }

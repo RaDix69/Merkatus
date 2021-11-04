@@ -38,10 +38,8 @@ if(empty($_POST['producto']) || empty($_POST['descripcion']) || empty($_POST['pr
     <title>Ingresar productos</title>
 </head>
 <body>
-    <!-- <center> -->
         <div class="contenedor">
         <section>
-
         <div class="formulario">
         <h1 class="titulo"> Datos Producto </h1>
 
@@ -49,12 +47,12 @@ if(empty($_POST['producto']) || empty($_POST['descripcion']) || empty($_POST['pr
         <h2>Ingrese los datos del producto</h2>
         <label for="" class="campos">Nombre del producto: </label>
         <div class="tooltip">
-            <input class="entrada" type="text" name="producto" pattern="^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$+0-9" title="Coloca solo letras, la primera en mayúscula" required="">
+            <input class="entrada" type="text" name="producto" pattern="[A-Za-z0-9 ]{1,100}" title="Coloca solo letras, la primera en mayúscula" required="">
              <br><br><span class="tooltiptext">Coloca solo letras, nada de números o caracteres especiales</span>
         </div>
         <label for="" class="campos">Nombre del proveedor: </label>
         <div class="tooltip">
-            <input class="entrada" type="text" name="proveedor" pattern="^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$+0-9" title="Coloca solo letras, la primera en mayúscula" required="">
+            <input class="entrada" type="text" name="proveedor" pattern="[A-Za-z0-9 ]{1,100}" title="Coloca solo letras, la primera en mayúscula" required="">
             <span class="tooltiptext">Coloca el nombre del proveedor</span> <br><br>
         </div>
         <label for="" class="campos">Categoria: </label>
@@ -65,7 +63,7 @@ if(empty($_POST['producto']) || empty($_POST['descripcion']) || empty($_POST['pr
                                     </select><br> <br>
         <label for="" class="campos">Descripción: </label>
         <div class="tooltip">
-            <textarea class="entrada" type="text" name="descripcion" pattern="^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$+0-9" required="" minlength="10" maxlength="200"></textarea><br><br>
+            <textarea class="entrada" type="text" name="descripcion" pattern="[A-Za-z0-9 ]{1,100}" required="" minlength="10" maxlength="200"></textarea><br><br>
             <span class="tooltiptext">Pon una breve descripción menor a 200 caracteres</span>
         </div>
         <label for="" class="campos">Precio: </label>
@@ -89,6 +87,6 @@ if(empty($_POST['producto']) || empty($_POST['descripcion']) || empty($_POST['pr
         </div>
     </section>
 
-    <!-- </center> -->
+     <img class="monito" src="https://i.kym-cdn.com/photos/images/original/001/866/170/a79.gif" alt="" >
 </body>
 </html>
