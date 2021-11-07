@@ -6,17 +6,19 @@ include "conexion/conexion.php";
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/estiloIngresar.css">
+    <link rel="stylesheet" href="estilos/estiloConsultar.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
+    
    
     <title>Datos Producto</title>
 </head>
 <body>
     <center>
-        <h1>Datos guardados</h1>
-        <table>
+        <h1 class="titulo">Datos guardados</h1>
+        <table class="tabla">
             <tr>
                 <th>Id_producto:</th>
                 <th>Proveedor:</th>
@@ -53,12 +55,16 @@ include "conexion/conexion.php";
             }
             if (isset($_GET['id'])) {
                 $id=$_GET['id'];
-                $sql= mysqli_query($conexion,"delete from productos where id_producto=$id");    
+                $sql= mysqli_query($conexion,"delete from productos where id_producto=$id"); 
+                ?>  
+                
+             <meta http-equiv="Refresh" content="0;url=consulta.php"> <?php
+
             }
             ?>
         </table>
         
-        <button><a href="index.php">Regresar</a></button>
+        <button class="re"><a href="index.php">Regresar</a></button>
         
     </center>
 </body>

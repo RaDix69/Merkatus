@@ -63,12 +63,12 @@ if(empty($_POST['producto']) || empty($_POST['descripcion']) || empty($_POST['pr
                                     </select><br> <br>
         <label for="" class="campos">Descripción: </label>
         <div class="tooltip">
-            <textarea class="entrada" type="text" name="descripcion" pattern="[A-Za-z0-9 ]{1,100}" required="" minlength="10" maxlength="200"></textarea><br><br>
+            <input class="entrada" type="text" name="descripcion" pattern="[A-Za-z0-9 ]{1,100}" required="" minlength="10" maxlength="200"><br><br>
             <span class="tooltiptext">Pon una breve descripción menor a 200 caracteres</span>
         </div>
         <label for="" class="campos">Precio: </label>
         <div class="tooltip">
-            <input  class="entrada" type="number" name="precio" required=""><br><br>
+            <input  class="entrada" type="number" name="precio" required="" pattern="{3,100}"><br><br>
             <span class="tooltiptext">Coloca el precio del producto</span>
         </div>
         <label for="" class="campos">Imágen: </label>

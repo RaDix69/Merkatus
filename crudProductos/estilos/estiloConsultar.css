@@ -12,25 +12,11 @@ body{
     box-sizing: border-box;
     font-family: 'Signika Negative', sans-serif;
 }
-/* table{
-    border-radius: 20px;
-    padding: 30px;
-    background-color: #ffffff;
-}
-th{
-    border:solid 1px #000 ;
-}
-td{
-    border:solid 1px #000 ;
-    margin: 20px;
-    padding: 20px;
-} */
-table{
+.tabla{
     border: none;
     width: 800px;
     text-align: center;
     background-color: #fff;
-
     border-radius: 5px;
 }
 th, td{
@@ -38,7 +24,7 @@ th, td{
     padding: 7px;
 }
 td{
-    border:1px solid #000 ;
+    border:1px solid  ;
 
 }
 th{
@@ -68,4 +54,24 @@ tr:hover{
 }
 a{
     text-decoration: none;
+    
+}
+.re{
+    margin-top: 20px;
+    margin-bottom: 20px;  
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0,8);
+}
+.re:hover{
+    background-color: rgba(255,255,255,0.5);
+    border: 2px solid rgba(0, 0, 0,8);
+    color: black;
+}
+.re a{
+    color: #fff;
+}
+.titulo{
+    color: #fff;
 }
