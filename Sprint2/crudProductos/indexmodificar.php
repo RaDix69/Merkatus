@@ -77,11 +77,14 @@ return[
     <br><br>
     <center>
     <input type="submit" name="boton" value="Actualizar Producto" class="boton" >
-    <button class="con"><a href="../crudProductos/consulta.php">Regresar</a></button>
-   </center>
+   <br><br>
     </form>
+    
             </div>
+    <button class="con"><a href="../crudProductos/consulta.php">Regresar</a></button>
+    </center>
         </section>
+
     </div>
     
     
