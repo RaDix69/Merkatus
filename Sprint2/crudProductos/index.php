@@ -12,15 +12,17 @@ if(empty($_POST['producto']) || empty($_POST['descripcion']) || empty($_POST['pr
     $precio =$_POST['precio'];
     $imagena = $_FILES['imagen']['tmp_name'];
     $imagen = addslashes(file_get_contents($imagena));
-    $query = "INSERT INTO productos (nombrep,proveedor,id_categoria,Descripcion,Precio,imagen) VALUES ('$producto','$proveedor','$categoria','$descripcion','$precio','$imagen')";
-    $resultado = $conexion->query($query);
-
-    if($resultado){
-        echo "Se han registrado los datos";
-        header('location: ../crudProductos/consulta.php');
-    }else{
-        echo "Datos no guardados";
+    $tipoIma = $_FILES['imagen']['type'];
+    if (!((strpos($tipoIma, "jpeg") || strpos($tipoIma, "jpg") || strpos($tipoIma, "png")))) {
+        echo "<div id=msj style='color:#fff; font-size:30px; background:#000; padding:10px; position:absolute; top:92%; left:33.5%;'>ERROR, el archivo no es una imágen compatible</div>";
     }
+    else{
+        $query = "INSERT INTO productos (nombrep,proveedor,id_categoria,Descripcion,Precio,imagen) VALUES ('$producto','$proveedor','$categoria','$descripcion','$precio','$imagen')";
+        $resultado = $conexion->query($query);
+        header('location: ../crudProductos/consulta.php');
+    }
+    
+   
 }
 ?>
 
