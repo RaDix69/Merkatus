@@ -57,7 +57,6 @@ if(empty($_POST['producto']) || empty($_POST['descripcion']) || empty($_POST['pr
         </div>
         <label for="" class="campos">Categoria: </label>
         <select class="entrada" name="categoria" required="">
-                  <option value="value1" selected disabled>......</option>
                   <option value="1200">Lacteos</option>
                   <option value="1201">Carnicos</option>
                                     </select><br> <br>
